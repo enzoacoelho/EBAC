@@ -1,48 +1,54 @@
-# 🛒 EBAC-SHOP: Documentação de Cenários de Teste (BDD)
+# 🛒 EBAC-SHOP: BDD Testing Documentation
 
-Este repositório contém a documentação dos comportamentos esperados (BDD) para a plataforma EBAC-SHOP, desenvolvida durante o módulo de Qualidade de Software da **EBAC**. Os cenários foram escritos em **Gherkin**, utilizando o padrão declarativo para focar nas regras de negócio e garantir a qualidade das entregas.
-
-## 🚀 Funcionalidades Mapeadas
-
-### 1. Configuração de Produto
-- Seleção dinâmica de cor, tamanho e quantidade.
-- **Regra de Negócio:** Limite máximo de 10 unidades por venda.
-- **Manutenção:** Opção de limpar configurações para retornar ao estado original.
-
-### 2. Login na Plataforma
-- Autenticação de múltiplos perfis de usuário utilizando Esquemas de Cenário.
-- **Tratamento de Erros:** Mensagens de alerta específicas para credenciais inválidas ou usuários inexistentes.
-
-### 3. Cadastro e Checkout
-- Fluxo de finalização de compra com preenchimento de dados obrigatórios.
-- **Validação de Dados:** Verificação de formato de e-mail e obrigatoriedade de campos.
-
-### 4. Cupons de Desconto
-- Aplicação de descontos percentuais baseados no valor total do carrinho.
-- **Regra de Negócio:** Validação de valor mínimo para ativação do cupom.
-- **Segurança:** Tratamento para cupons expirados ou códigos inexistentes.
-
-### 5. Controle de Estoque
-- Validação de disponibilidade física de produtos antes da adição ao carrinho.
-- **UX:** Mensagens informativas ao tentar exceder a quantidade disponível em estoque.
-
-### 6. Redefinição de Senha
-- Fluxo de alteração de senha com critérios de segurança.
-- **Regras de Negócio:** Tamanho mínimo de 8 caracteres e validação de coincidência entre os campos.
-- **Histórico:** Bloqueio de reutilização de senhas antigas.
-
-### 7. Busca de Produtos
-- Pesquisa por termos específicos e categorias.
-- **Tratamento de Erros:** Exibição de mensagem informativa quando nenhum produto é encontrado.
-
-### 8. Lista de Desejos (Wishlist)
-- Gerenciamento de produtos favoritos para compra posterior.
-- **Comportamento:** Validação visual da adição e remoção de itens na lista do usuário.
-
-## 🛠️ Tecnologias e Conceitos Aplicados
-- **Linguagem:** Gherkin (#language: pt)
-- **Metodologia:** BDD (Behavior Driven Development)
-- **Técnicas de Teste:** Análise de Valor Limite e Escrita Declarativa.
+[Clique aqui para a versão em Português](#-versão-em-português)  
+[Click here for the English version](#-english-version)
 
 ---
-*Repositório mantido por Enzo Coelho*
+
+## 🇧🇷 Versão em Português
+
+Este repositório contém a documentação de cenários de teste (BDD) para a plataforma EBAC-SHOP. O projeto foi estruturado para demonstrar o uso da linguagem Gherkin em um ambiente bilíngue, cobrindo as principais regras de negócio do e-commerce.
+
+### 📂 Estrutura de Pastas
+- `features/pt-br/`: Arquivos escritos em Português.
+- `features/en/`: Arquivos escritos em Inglês.
+
+### 🚀 Funcionalidades Mapeadas
+1. **Login:** Autenticação e validação de credenciais.
+2. **Configuração de Produto:** Seleção de atributos e limites de quantidade.
+3. **Checkout:** Cadastro de cliente e validações de campos obrigatórios.
+4. **Cupom de Desconto:** Regras de valores mínimos e códigos inválidos.
+5. **Estoque:** Controle de disponibilidade física de produtos.
+6. **Redefinição de Senha:** Critérios de segurança e histórico de senhas.
+7. **Busca de Produtos:** Pesquisa por palavras-chave e resultados vazios.
+8. **Lista de Desejos:** Gestão de produtos favoritos.
+
+---
+
+## 🇺🇸 English Version
+
+This repository contains Behavior-Driven Development (BDD) test scenarios for the EBAC-SHOP platform. The project is structured to showcase Gherkin language proficiency in a bilingual environment, covering core e-commerce business rules.
+
+### 📂 Folder Structure
+- `features/pt-br/`: Scenarios written in Portuguese.
+- `features/en/`: Scenarios written in English.
+
+### 🚀 Mapped Features
+1. **Login:** Authentication and credential validation.
+2. **Product Configuration:** Attribute selection and quantity limits.
+3. **Checkout:** Customer registration and mandatory field validation.
+4. **Discount Coupon:** Minimum value rules and invalid codes.
+5. **Inventory:** Physical product availability control.
+6. **Password Reset:** Security criteria and password history.
+7. **Product Search:** Keyword search and empty result handling.
+8. **Wishlist:** Favorite product management.
+
+---
+
+## 🛠️ Tech Stack & Concepts
+- **Language:** Gherkin
+- **Methodology:** BDD (Behavior Driven Development)
+- **Techniques:** Boundary Value Analysis, Equivalence Partitioning, and Declarative Writing.
+
+---
+*Maintained by **Enzo Coelho***
